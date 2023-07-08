@@ -1,4 +1,4 @@
-unit Guru;
+unit Laporan;
 
 interface
 
@@ -7,7 +7,7 @@ uses
   Dialogs;
 
 type
-  TFormGuru = class(TForm)
+  TForm1 = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  FormGuru: TFormGuru;
+  Form1: TForm1;
 
 implementation
 

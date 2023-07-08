@@ -4,10 +4,18 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs;
+  Dialogs, Grids, DBGrids, StdCtrls, Buttons;
 
 type
-  TForm5 = class(TForm)
+  TFormGuru = class(TForm)
+    BBaru: TBitBtn;
+    BTambah: TBitBtn;
+    BEdit: TBitBtn;
+    BHapus: TBitBtn;
+    BCetak: TBitBtn;
+    BBatal: TBitBtn;
+    BKeluar: TBitBtn;
+    DBGrid1: TDBGrid;
   private
     { Private declarations }
   public
@@ -15,9 +23,11 @@ type
   end;
 
 var
-  Form5: TForm5;
+  FormGuru: TFormGuru;
 
 implementation
+
+uses DataModul;
 
 {$R *.dfm}
 

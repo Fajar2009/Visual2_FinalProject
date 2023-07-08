@@ -1,9 +1,9 @@
-object FormGuru: TFormGuru
+object Form1: TForm1
   Left = 191
   Top = 125
   Width = 1305
   Height = 675
-  Caption = 'Form Guru'
+  Caption = 'FLaporan'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

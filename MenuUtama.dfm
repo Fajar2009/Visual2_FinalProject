@@ -1,4 +1,4 @@
-object Form1: TForm1
+object FormMainMenu: TFormMainMenu
   Left = 448
   Top = 179
   Width = 1305
@@ -21,12 +21,14 @@ object Form1: TForm1
       Caption = 'Siswa'
       object DataSiswa1: TMenuItem
         Caption = 'Data Siswa'
+        OnClick = DataSiswa1Click
       end
     end
     object User1: TMenuItem
       Caption = 'Ortu'
       object DataOrangTua1: TMenuItem
         Caption = 'Data Orang Tua'
+        OnClick = DataOrangTua1Click
       end
     end
     object User2: TMenuItem
@@ -51,6 +53,7 @@ object Form1: TForm1
       Caption = 'User'
       object DataUser1: TMenuItem
         Caption = 'Data User'
+        OnClick = DataUser1Click
       end
     end
   end

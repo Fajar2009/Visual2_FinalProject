@@ -7,7 +7,7 @@ uses
   Dialogs, Menus;
 
 type
-  TForm1 = class(TForm)
+  TFormMainMenu = class(TForm)
     MainMenu1: TMainMenu;
     S1: TMenuItem;
     User1: TMenuItem;
@@ -21,6 +21,9 @@ type
     DataSemester1: TMenuItem;
     DataLaporan1: TMenuItem;
     DataUser1: TMenuItem;
+    procedure DataSiswa1Click(Sender: TObject);
+    procedure DataUser1Click(Sender: TObject);
+    procedure DataOrangTua1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -28,10 +31,27 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FormMainMenu: TFormMainMenu;
 
 implementation
 
+uses Guru, OrangTua, Siswa, User;
+
 {$R *.dfm}
+
+procedure TFormMainMenu.DataSiswa1Click(Sender: TObject);
+begin
+FormSiswa.show;
+end;
+
+procedure TFormMainMenu.DataUser1Click(Sender: TObject);
+begin
+FormUser.Show;
+end;
+
+procedure TFormMainMenu.DataOrangTua1Click(Sender: TObject);
+begin
+FormOrtu.Show;
+end;
 
 end.

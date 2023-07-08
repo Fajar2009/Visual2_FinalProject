@@ -3,10 +3,18 @@ unit DataModul;
 interface
 
 uses
-  SysUtils, Classes;
+  SysUtils, Classes, DB, ZAbstractRODataset, ZAbstractDataset, ZDataset,
+  ZAbstractConnection, ZConnection;
 
 type
   TDataModule1 = class(TDataModule)
+    ZConnection1: TZConnection;
+    ZQSiswa: TZQuery;
+    DSSiswa: TDataSource;
+    ZQUser: TZQuery;
+    ZQOrtu: TZQuery;
+    DSUser: TDataSource;
+    DSOrtu: TDataSource;
   private
     { Private declarations }
   public
@@ -15,6 +23,8 @@ type
 
 var
   DataModule1: TDataModule1;
+   id:String;
+
 
 implementation
 

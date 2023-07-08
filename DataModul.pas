@@ -11,8 +11,8 @@ type
     ZConnection1: TZConnection;
     ZQSiswa: TZQuery;
     DSSiswa: TDataSource;
-    ZUser: TZQuery;
-    ZOrtu: TZQuery;
+    ZQUser: TZQuery;
+    ZQOrtu: TZQuery;
     DSUser: TDataSource;
     DSOrtu: TDataSource;
   private
@@ -23,6 +23,8 @@ type
 
 var
   DataModule1: TDataModule1;
+  
+
 
 implementation
 
