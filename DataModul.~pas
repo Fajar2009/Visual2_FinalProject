@@ -23,7 +23,7 @@ type
 
 var
   DataModule1: TDataModule1;
-   id:String;
+  
 
 
 implementation

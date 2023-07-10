@@ -32,9 +32,10 @@ object FormMainMenu: TFormMainMenu
       end
     end
     object User2: TMenuItem
-      Caption = 'Guru'
+      Caption = 'Walikelas'
       object DataGuru1: TMenuItem
-        Caption = 'Data Guru'
+        Caption = 'Data Walikelas'
+        OnClick = DataGuru1Click
       end
     end
     object Point1: TMenuItem
@@ -44,9 +45,10 @@ object FormMainMenu: TFormMainMenu
       end
     end
     object User3: TMenuItem
-      Caption = 'Laporan'
+      Caption = 'Poin'
       object DataLaporan1: TMenuItem
-        Caption = 'Data Laporan'
+        Caption = 'Data Poin'
+        OnClick = DataLaporan1Click
       end
     end
     object User4: TMenuItem
@@ -54,6 +56,13 @@ object FormMainMenu: TFormMainMenu
       object DataUser1: TMenuItem
         Caption = 'Data User'
         OnClick = DataUser1Click
+      end
+    end
+    object Kelas1: TMenuItem
+      Caption = 'Kelas'
+      object DataKelas1: TMenuItem
+        Caption = 'Data Kelas'
+        OnClick = DataKelas1Click
       end
     end
   end

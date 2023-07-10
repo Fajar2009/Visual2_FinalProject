@@ -15,6 +15,12 @@ type
     ZQOrtu: TZQuery;
     DSUser: TDataSource;
     DSOrtu: TDataSource;
+    ZQWalikelas: TZQuery;
+    ZQKelas: TZQuery;
+    ZQPoint: TZQuery;
+    DSWalikelas: TDataSource;
+    DSKelas: TDataSource;
+    DSPoint: TDataSource;
   private
     { Private declarations }
   public
@@ -23,7 +29,7 @@ type
 
 var
   DataModule1: TDataModule1;
-  
+
 
 
 implementation

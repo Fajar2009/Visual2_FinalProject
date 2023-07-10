@@ -9,7 +9,7 @@ uses
   User in 'User.pas' {FormUser},
   Guru in 'Guru.pas' {FormGuru},
   Laporan in 'Laporan.pas' {Form1},
-  CetakModule in 'CetakModule.pas' {DataModule2: TDataModule};
+  CetakModule in 'CetakModule.pas' {ModulCetak: TDataModule};
 
 {$R *.res}
 
@@ -22,6 +22,6 @@ begin
   Application.CreateForm(TFormUser, FormUser);
   Application.CreateForm(TFormGuru, FormGuru);
   Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TDataModule2, DataModule2);
+  Application.CreateForm(TModulCetak, ModulCetak);
   Application.Run;
 end.

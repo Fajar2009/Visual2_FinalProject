@@ -2,7 +2,7 @@ object DataModule1: TDataModule1
   OldCreateOrder = False
   Left = 189
   Top = 181
-  Height = 362
+  Height = 398
   Width = 468
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -59,5 +59,47 @@ object DataModule1: TDataModule1
     DataSet = ZQOrtu
     Left = 136
     Top = 144
+  end
+  object ZQWalikelas: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'Select * from walikelas')
+    Params = <>
+    Left = 80
+    Top = 200
+  end
+  object ZQKelas: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from kelas')
+    Params = <>
+    Left = 80
+    Top = 256
+  end
+  object ZQPoint: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from poin')
+    Params = <>
+    Left = 80
+    Top = 312
+  end
+  object DSWalikelas: TDataSource
+    DataSet = ZQWalikelas
+    Left = 136
+    Top = 200
+  end
+  object DSKelas: TDataSource
+    DataSet = ZQKelas
+    Left = 136
+    Top = 264
+  end
+  object DSPoint: TDataSource
+    DataSet = ZQPoint
+    Left = 136
+    Top = 320
   end
 end

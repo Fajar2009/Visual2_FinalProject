@@ -1,9 +1,9 @@
-object FormGuru: TFormGuru
-  Left = 191
-  Top = 125
-  Width = 1305
-  Height = 675
-  Caption = 'Form Walikelas'
+object FormPoint: TFormPoint
+  Left = 192
+  Top = 131
+  Width = 766
+  Height = 707
+  Caption = 'Form Point'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,63 +11,36 @@ object FormGuru: TFormGuru
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 64
-    Top = 32
-    Width = 18
+    Left = 48
+    Top = 24
+    Width = 52
     Height = 13
-    Caption = 'NIK'
+    Caption = 'Nama Poin'
   end
   object Label2: TLabel
-    Left = 64
-    Top = 64
-    Width = 28
+    Left = 48
+    Top = 56
+    Width = 55
     Height = 13
-    Caption = 'Nama'
+    Caption = 'Bobot Point'
   end
   object Label3: TLabel
-    Left = 64
-    Top = 96
-    Width = 63
+    Left = 48
+    Top = 88
+    Width = 51
     Height = 13
-    Caption = 'Jenis kelamin'
+    Caption = 'Jenis Point'
   end
   object Label4: TLabel
-    Left = 64
-    Top = 128
-    Width = 32
-    Height = 13
-    Caption = 'Alamat'
-  end
-  object Label5: TLabel
-    Left = 496
-    Top = 32
-    Width = 53
-    Height = 13
-    Caption = 'No. Telpon'
-  end
-  object Label6: TLabel
-    Left = 496
-    Top = 64
+    Left = 48
+    Top = 120
     Width = 30
     Height = 13
     Caption = 'Status'
-  end
-  object Label7: TLabel
-    Left = 496
-    Top = 96
-    Width = 53
-    Height = 13
-    Caption = 'Pendidikan'
-  end
-  object Label8: TLabel
-    Left = 496
-    Top = 128
-    Width = 71
-    Height = 13
-    Caption = 'Mata Pelajaran'
   end
   object BBaru: TBitBtn
     Left = 40
@@ -138,10 +111,10 @@ object FormGuru: TFormGuru
   end
   object DBGrid1: TDBGrid
     Left = 40
-    Top = 248
-    Width = 1177
-    Height = 297
-    DataSource = DataModule1.DSWalikelas
+    Top = 240
+    Width = 673
+    Height = 273
+    DataSource = DataModule1.DSPoint
     TabOrder = 7
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -150,77 +123,44 @@ object FormGuru: TFormGuru
     TitleFont.Style = []
     OnCellClick = DBGrid1CellClick
   end
-  object ENik: TEdit
+  object ENama: TEdit
     Left = 152
-    Top = 32
-    Width = 265
+    Top = 24
+    Width = 329
     Height = 21
     Enabled = False
     TabOrder = 8
   end
-  object ENama: TEdit
+  object EBobot: TEdit
     Left = 152
-    Top = 64
-    Width = 265
+    Top = 56
+    Width = 329
     Height = 21
     Enabled = False
     TabOrder = 9
   end
-  object EAlamat: TEdit
+  object CmbJenis: TComboBox
     Left = 152
-    Top = 128
-    Width = 265
+    Top = 88
+    Width = 329
     Height = 21
     Enabled = False
+    ItemHeight = 13
     TabOrder = 10
+    Text = 'Pelanggaran'
+    Items.Strings = (
+      'Pelanggaran'
+      'Prestasi')
   end
-  object CmbJk: TComboBox
+  object CmbStatus: TComboBox
     Left = 152
-    Top = 96
-    Width = 265
+    Top = 120
+    Width = 329
     Height = 21
     Enabled = False
     ItemHeight = 13
     ItemIndex = 0
     TabOrder = 11
-    Text = 'Laki-Laki'
-    Items.Strings = (
-      'Laki-Laki'
-      'Perempuan')
-  end
-  object ETelp: TEdit
-    Left = 584
-    Top = 32
-    Width = 265
-    Height = 21
-    Enabled = False
-    TabOrder = 12
-  end
-  object EPendidikan: TEdit
-    Left = 584
-    Top = 96
-    Width = 265
-    Height = 21
-    Enabled = False
-    TabOrder = 13
-  end
-  object EMatpel: TEdit
-    Left = 584
-    Top = 128
-    Width = 265
-    Height = 21
-    Enabled = False
-    TabOrder = 14
-  end
-  object CmbStatus: TComboBox
-    Left = 584
-    Top = 64
-    Width = 265
-    Height = 21
-    Enabled = False
-    ItemHeight = 13
-    ItemIndex = 0
-    TabOrder = 15
     Text = 'Aktif'
     Items.Strings = (
       'Aktif'

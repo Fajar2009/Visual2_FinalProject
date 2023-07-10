@@ -99,6 +99,7 @@ end;
 
 procedure TFormUser.DBGrid1CellClick(Column: TColumn);
 begin
+BTambah.Enabled:=false;
 BBaru.Enabled:=false;
 BEdit.Enabled:=true;
 BHapus.Enabled:=true;

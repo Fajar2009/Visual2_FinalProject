@@ -138,6 +138,7 @@ end;
 
 procedure TFormSiswa.DBGrid1CellClick(Column: TColumn);
 begin
+BTambah.Enabled:=false;
 BBaru.Enabled:=false;
 BEdit.Enabled:=true;
 BHapus.Enabled:=true;
@@ -162,6 +163,7 @@ end else
 begin
  CmbJenisKel.ItemIndex:=0;
 end;
+
 if (DataModule1.ZQSiswa.Fields[11].AsString='Aktif')  then
 begin
  CmbStatus.ItemIndex:=0;
@@ -230,14 +232,12 @@ end;
 
 procedure TFormSiswa.BHapusClick(Sender: TObject);
 begin
- if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
+if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 DataModule1.ZQSiswa.SQL.Clear;
 DataModule1.ZQSiswa.SQL.Add(' delete from siswa where id="'+id+'"');
 DataModule1.ZQSiswa. ExecSQL;
-
 ShowMessage('DATA BERHASIL DIHAPUS');
-
 bersih;
 end else
 begin

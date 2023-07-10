@@ -13,6 +13,12 @@ type
     frxDBDatasetUser: TfrxDBDataset;
     frxDBDatasetOrtu: TfrxDBDataset;
     CetakOrtu: TfrxReport;
+    CetakKelas: TfrxReport;
+    frxDBDatasetKelas: TfrxDBDataset;
+    CetakPoin: TfrxReport;
+    frxDBDatasetPoin: TfrxDBDataset;
+    CetakWalikelas: TfrxReport;
+    frxDBDatasetWalikelas: TfrxDBDataset;
   private
     { Private declarations }
   public

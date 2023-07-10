@@ -43,6 +43,7 @@ type
     procedure DBGrid1CellClick(Column: TColumn);
     procedure BTambahClick(Sender: TObject);
     procedure BEditClick(Sender: TObject);
+    procedure BKeluarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -156,6 +157,7 @@ end;
 
 procedure TFormOrtu.DBGrid1CellClick(Column: TColumn);
 begin
+BTambah.Enabled:=false;
 BBaru.Enabled:=false;
 BEdit.Enabled:=true;
 BHapus.Enabled:=true;
@@ -255,6 +257,11 @@ begin
  bersih;
 end
 end
+end;
+
+procedure TFormOrtu.BKeluarClick(Sender: TObject);
+begin
+FormOrtu.Close;
 end;
 
 end.

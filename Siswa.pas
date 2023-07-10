@@ -138,6 +138,7 @@ end;
 
 procedure TFormSiswa.DBGrid1CellClick(Column: TColumn);
 begin
+BTambah.Enabled:=false;
 BBaru.Enabled:=false;
 BEdit.Enabled:=true;
 BHapus.Enabled:=true;
@@ -236,9 +237,7 @@ begin
 DataModule1.ZQSiswa.SQL.Clear;
 DataModule1.ZQSiswa.SQL.Add(' delete from siswa where id="'+id+'"');
 DataModule1.ZQSiswa. ExecSQL;
-
 ShowMessage('DATA BERHASIL DIHAPUS');
-
 bersih;
 end else
 begin

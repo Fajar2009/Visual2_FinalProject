@@ -156,6 +156,7 @@ object FormOrtu: TFormOrtu
     Height = 41
     Caption = 'Keluar'
     TabOrder = 7
+    OnClick = BKeluarClick
   end
   object ENama: TEdit
     Left = 136
