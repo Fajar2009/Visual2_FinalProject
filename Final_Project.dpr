@@ -8,10 +8,11 @@ uses
   OrangTua in 'OrangTua.pas' {FormOrtu},
   User in 'User.pas' {FormUser},
   Guru in 'Guru.pas' {FormGuru},
-  Laporan in 'Laporan.pas' {Form1},
   CetakModule in 'CetakModule.pas' {ModulCetak: TDataModule},
   Kelas in 'Kelas.pas' {FormKelas},
-  Poin in 'Poin.pas' {FormPoint};
+  Poin in 'Poin.pas' {FormPoint},
+  Hubungan in 'Hubungan.pas' {FormHubungan},
+  Semester in 'Semester.pas' {FormSemester};
 
 {$R *.res}
 
@@ -23,9 +24,10 @@ begin
   Application.CreateForm(TFormOrtu, FormOrtu);
   Application.CreateForm(TFormUser, FormUser);
   Application.CreateForm(TFormGuru, FormGuru);
-  Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TModulCetak, ModulCetak);
   Application.CreateForm(TFormKelas, FormKelas);
   Application.CreateForm(TFormPoint, FormPoint);
+  Application.CreateForm(TFormHubungan, FormHubungan);
+  Application.CreateForm(TFormSemester, FormSemester);
   Application.Run;
 end.

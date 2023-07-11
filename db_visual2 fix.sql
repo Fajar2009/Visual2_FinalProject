@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Jul 2023 pada 16.14
+-- Waktu pembuatan: 11 Jul 2023 pada 14.26
 -- Versi server: 10.4.25-MariaDB
 -- Versi PHP: 8.0.23
 
@@ -31,10 +31,18 @@ CREATE TABLE `hubungan` (
   `Id` int(10) NOT NULL,
   `Id_Siswa` int(10) NOT NULL,
   `Id_Ortu` int(10) NOT NULL,
-  `Status_Hub` int(5) NOT NULL,
-  `Keterangan` int(5) NOT NULL,
-  `Status_Ortu` int(5) NOT NULL
+  `Status_Hub` varchar(15) NOT NULL,
+  `Keterangan` varchar(15) NOT NULL,
+  `Status_Ortu` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `hubungan`
+--
+
+INSERT INTO `hubungan` (`Id`, `Id_Siswa`, `Id_Ortu`, `Status_Hub`, `Keterangan`, `Status_Ortu`) VALUES
+(1, 1, 2, 'Kandung', 'Saudara', 'Hidup '),
+(2, 2, 3, 'Kandung', 'Ayah', 'Hidup');
 
 -- --------------------------------------------------------
 
@@ -53,7 +61,9 @@ CREATE TABLE `kelas` (
 --
 
 INSERT INTO `kelas` (`Id`, `Nama`, `Jurusan`) VALUES
-(1, 'X', 'Bahasa');
+(1, 'X 2020', 'Bahasa'),
+(2, 'XII  MIPA 2 2020', 'Umum'),
+(3, 'XII MIPA 1 2021', 'Umum');
 
 -- --------------------------------------------------------
 
@@ -71,7 +81,7 @@ CREATE TABLE `ortu` (
   `Alamat` varchar(40) NOT NULL,
   `Telpon` int(15) NOT NULL,
   `Agama` varchar(10) NOT NULL,
-  `Is_Active` varchar(10) NOT NULL
+  `Is_Active` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -79,8 +89,9 @@ CREATE TABLE `ortu` (
 --
 
 INSERT INTO `ortu` (`Id`, `NIK`, `Nama`, `Pendidikan`, `Pekerjaan`, `Jenis_Kelamin`, `Alamat`, `Telpon`, `Agama`, `Is_Active`) VALUES
-(1, 435345, 'jafar agung', 'sma', 'tni', 'Laki-Laki', 'jl', 7878, 'Islam', 'Tidak Akti'),
-(2, 212121, 'Devina agnes', 'S1', 'Guru', 'Perempuan', 'JLskdhksjdh', 989, 'Kristen', 'Tidak Akti');
+(2, 212121, 'Devina agnes', 'S1', 'Guru', 'Perempuan', 'JLskdhksjdh', 989, 'Kristen', 'Tidak Aktif '),
+(3, 132323, 'Joko', 'S2', 'Pengusaha', 'Laki-Laki', 'Jl cirebon', 78687, 'Islam', 'Aktif'),
+(4, 23652, 'Wijaya', 'S3', 'Dosen', 'Laki-Laki', 'Jl batu', 6557, 'Budha', 'Aktif');
 
 -- --------------------------------------------------------
 
@@ -118,10 +129,17 @@ CREATE TABLE `semester` (
   `Id_Ortu` int(10) NOT NULL,
   `Id_Kelas` int(10) NOT NULL,
   `Tanggal` date NOT NULL,
-  `Semester` int(5) NOT NULL,
-  `Status` int(5) NOT NULL,
-  `Tingkat_Kelas` int(5) NOT NULL
+  `Semester` varchar(15) NOT NULL,
+  `Status` varchar(15) NOT NULL,
+  `Tingkat_Kelas` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `semester`
+--
+
+INSERT INTO `semester` (`Id`, `Id_Siswa`, `Id_Poin`, `Id_Wali`, `Id_Ortu`, `Id_Kelas`, `Tanggal`, `Semester`, `Status`, `Tingkat_Kelas`) VALUES
+(1, 1, 2, 1, 2, 3, '2023-07-11', 'Ganjil', 'Aktif', 'XII ');
 
 -- --------------------------------------------------------
 
@@ -192,8 +210,16 @@ CREATE TABLE `walikelas` (
   `Telp` int(15) NOT NULL,
   `Status` varchar(15) NOT NULL,
   `Pendidikan` varchar(15) NOT NULL,
-  `Matpel` int(15) NOT NULL
+  `Matpel` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `walikelas`
+--
+
+INSERT INTO `walikelas` (`Id`, `NIK`, `Nama`, `Jenis_Kelamin`, `Alamat`, `Telp`, `Status`, `Pendidikan`, `Matpel`) VALUES
+(1, 13354657, 'Budi h', 'Perempuan', 'jl. didd', 8122222, 'Tidak Aktif', 'S1 Matematika', 'Matematika    '),
+(2, 79978, 'Susi', 'Perempuan', 'Jl timba', 8978, 'Aktif', 'S1 Fisika ', 'Fisika');
 
 --
 -- Indexes for dumped tables
@@ -262,19 +288,19 @@ ALTER TABLE `walikelas`
 -- AUTO_INCREMENT untuk tabel `hubungan`
 --
 ALTER TABLE `hubungan`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `kelas`
 --
 ALTER TABLE `kelas`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `ortu`
 --
 ALTER TABLE `ortu`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `poin`
@@ -286,7 +312,7 @@ ALTER TABLE `poin`
 -- AUTO_INCREMENT untuk tabel `semester`
 --
 ALTER TABLE `semester`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `siswa`
@@ -304,7 +330,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `walikelas`
 --
 ALTER TABLE `walikelas`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

@@ -1417,7 +1417,7 @@ object ModulCetak: TModulCetak
         object Memo20: TfrxMemoView
           Left = 302.362400000000000000
           Top = 37.795300000000000000
-          Width = 94.488250000000000000
+          Width = 117.165430000000000000
           Height = 18.897650000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -1426,7 +1426,7 @@ object ModulCetak: TModulCetak
           Font.Name = 'Arial'
           Font.Style = []
           Memo.UTF8 = (
-            'Sd XYZ')
+            'Sekolah XYZ')
           ParentFont = False
         end
         object Memo21: TfrxMemoView
@@ -1670,8 +1670,8 @@ object ModulCetak: TModulCetak
     end
     object Page1: TfrxReportPage
       Orientation = poLandscape
-      PaperWidth = 279.000000000000000000
-      PaperHeight = 216.000000000000000000
+      PaperWidth = 279.400000000000000000
+      PaperHeight = 215.900000000000000000
       PaperSize = 1
       LeftMargin = 10.000000000000000000
       RightMargin = 10.000000000000000000
@@ -1680,7 +1680,7 @@ object ModulCetak: TModulCetak
       object ReportTitle1: TfrxReportTitle
         Height = 105.826840000000000000
         Top = 18.897650000000000000
-        Width = 978.898270000000000000
+        Width = 980.410082000000000000
         object Memo1: TfrxMemoView
           Left = 328.819110000000000000
           Top = 15.118120000000000000
@@ -1697,9 +1697,9 @@ object ModulCetak: TModulCetak
           ParentFont = False
         end
         object Memo20: TfrxMemoView
-          Left = 415.748300000000000000
+          Left = 404.409710000000000000
           Top = 49.133890000000000000
-          Width = 94.488250000000000000
+          Width = 124.724490000000000000
           Height = 18.897650000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -1708,7 +1708,7 @@ object ModulCetak: TModulCetak
           Font.Name = 'Arial'
           Font.Style = []
           Memo.UTF8 = (
-            'Sd XYZ')
+            'Sekolah XYZ')
           ParentFont = False
         end
         object Memo21: TfrxMemoView
@@ -1730,7 +1730,7 @@ object ModulCetak: TModulCetak
       object PageHeader1: TfrxPageHeader
         Height = 26.456710000000000000
         Top = 147.401670000000000000
-        Width = 978.898270000000000000
+        Width = 980.410082000000000000
         object Memo2: TfrxMemoView
           Top = 7.559060000000000000
           Width = 49.133890000000000000
@@ -1880,7 +1880,7 @@ object ModulCetak: TModulCetak
       object MasterData1: TfrxMasterData
         Height = 18.897650000000000000
         Top = 234.330860000000000000
-        Width = 978.898270000000000000
+        Width = 980.410082000000000000
         DataSet = frxDBDatasetWalikelas
         DataSetName = 'frxDBDatasetWalikelas'
         RowCount = 0
@@ -1998,5 +1998,570 @@ object ModulCetak: TModulCetak
     BCDToCurrency = False
     Left = 248
     Top = 56
+  end
+  object CetakHubungan: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45118.826925833300000000
+    ReportOptions.LastChange = 45118.836635081020000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 328
+    Top = 128
+    Datasets = <
+      item
+        DataSet = frxDBDatasetHub
+        DataSetName = 'frxDBDatasetHub'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        Height = 120.944960000000000000
+        Top = 18.897650000000000000
+        Width = 718.110700000000000000
+        object Memo13: TfrxMemoView
+          Left = 207.874150000000000000
+          Top = 18.897650000000000000
+          Width = 298.582870000000000000
+          Height = 37.795300000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -27
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8 = (
+            'Laporan Data Hubungan')
+          ParentFont = False
+        end
+        object Memo20: TfrxMemoView
+          Left = 272.126160000000000000
+          Top = 52.913420000000000000
+          Width = 128.504020000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8 = (
+            'Sekolah XYZ')
+          ParentFont = False
+        end
+        object Memo21: TfrxMemoView
+          Left = 257.008040000000000000
+          Top = 75.590600000000000000
+          Width = 173.858380000000000000
+          Height = 30.236240000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8 = (
+            'Jl. xyz .Telp 08123 ')
+          ParentFont = False
+        end
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 37.795300000000000000
+        Top = 162.519790000000000000
+        Width = 718.110700000000000000
+        object Memo1: TfrxMemoView
+          Left = 18.897650000000000000
+          Top = 18.897650000000000000
+          Width = 37.795300000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'No')
+        end
+        object Memo2: TfrxMemoView
+          Left = 56.692950000000000000
+          Top = 18.897650000000000000
+          Width = 132.283550000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Nama Siswa')
+        end
+        object Memo3: TfrxMemoView
+          Left = 188.976500000000000000
+          Top = 18.897650000000000000
+          Width = 132.283550000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Nama Wali')
+        end
+        object Memo4: TfrxMemoView
+          Left = 321.260050000000000000
+          Top = 18.897650000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Hubungan')
+        end
+        object Memo5: TfrxMemoView
+          Left = 415.748300000000000000
+          Top = 18.897650000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Keterangan')
+        end
+        object Memo6: TfrxMemoView
+          Left = 510.236550000000000000
+          Top = 18.897650000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Status Wali')
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 18.897650000000000000
+        Top = 260.787570000000000000
+        Width = 718.110700000000000000
+        DataSet = frxDBDatasetHub
+        DataSetName = 'frxDBDatasetHub'
+        RowCount = 0
+        object Memo7: TfrxMemoView
+          Left = 18.897650000000000000
+          Width = 37.795300000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[Line]')
+        end
+        object Memo8: TfrxMemoView
+          Left = 56.692950000000000000
+          Width = 132.283550000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Nama_Siswa'
+          DataSet = frxDBDatasetHub
+          DataSetName = 'frxDBDatasetHub'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetHub."Nama_Siswa"]')
+        end
+        object Memo9: TfrxMemoView
+          Left = 188.976500000000000000
+          Width = 132.283550000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Nama'
+          DataSet = frxDBDatasetHub
+          DataSetName = 'frxDBDatasetHub'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetHub."Nama"]')
+        end
+        object Memo10: TfrxMemoView
+          Left = 321.260050000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Status_Hub'
+          DataSet = frxDBDatasetHub
+          DataSetName = 'frxDBDatasetHub'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetHub."Status_Hub"]')
+        end
+        object Memo11: TfrxMemoView
+          Left = 415.748300000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Keterangan'
+          DataSet = frxDBDatasetHub
+          DataSetName = 'frxDBDatasetHub'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetHub."Keterangan"]')
+        end
+        object Memo12: TfrxMemoView
+          Left = 510.236550000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Status_Ortu'
+          DataSet = frxDBDatasetHub
+          DataSetName = 'frxDBDatasetHub'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetHub."Status_Ortu"]')
+        end
+      end
+    end
+  end
+  object CetakSemester: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45118.827217847200000000
+    ReportOptions.LastChange = 45118.827217847200000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 328
+    Top = 200
+    Datasets = <
+      item
+        DataSet = frxDBDatasetSemester
+        DataSetName = 'frxDBDatasetSemester'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      Orientation = poLandscape
+      PaperWidth = 297.000000000000000000
+      PaperHeight = 210.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        Height = 98.267780000000000000
+        Top = 18.897650000000000000
+        Width = 1046.929810000000000000
+        object Memo21: TfrxMemoView
+          Left = 359.055350000000000000
+          Top = 3.779530000000000000
+          Width = 298.582870000000000000
+          Height = 37.795300000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -27
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8 = (
+            'Laporan Data Semester')
+          ParentFont = False
+        end
+        object Memo22: TfrxMemoView
+          Left = 423.307360000000000000
+          Top = 37.795300000000000000
+          Width = 128.504020000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8 = (
+            'Sekolah XYZ')
+          ParentFont = False
+        end
+        object Memo23: TfrxMemoView
+          Left = 408.189240000000000000
+          Top = 60.472480000000000000
+          Width = 173.858380000000000000
+          Height = 30.236240000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8 = (
+            'Jl. xyz .Telp 08123 ')
+          ParentFont = False
+        end
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 22.677180000000000000
+        Top = 139.842610000000000000
+        Width = 1046.929810000000000000
+        object Memo1: TfrxMemoView
+          Left = 3.779530000000000000
+          Top = 3.779530000000000000
+          Width = 34.015770000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'No')
+        end
+        object Memo2: TfrxMemoView
+          Left = 37.795300000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Nama Siswa')
+        end
+        object Memo3: TfrxMemoView
+          Left = 132.283550000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Nama Wali')
+        end
+        object Memo4: TfrxMemoView
+          Left = 226.771800000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Nama Poin')
+        end
+        object Memo5: TfrxMemoView
+          Left = 321.260050000000000000
+          Top = 3.779530000000000000
+          Width = 117.165430000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Nama Walikelas')
+        end
+        object Memo6: TfrxMemoView
+          Left = 438.425480000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Nama Kelas')
+        end
+        object Memo7: TfrxMemoView
+          Left = 532.913730000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Tanggal poin')
+        end
+        object Memo8: TfrxMemoView
+          Left = 627.401980000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Semester')
+        end
+        object Memo9: TfrxMemoView
+          Left = 721.890230000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Status')
+        end
+        object Memo10: TfrxMemoView
+          Left = 816.378480000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            'Tingkat Kelas')
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 18.897650000000000000
+        Top = 222.992270000000000000
+        Width = 1046.929810000000000000
+        DataSet = frxDBDatasetSemester
+        DataSetName = 'frxDBDatasetSemester'
+        RowCount = 0
+        object Memo11: TfrxMemoView
+          Left = 3.779530000000000000
+          Width = 34.015770000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[Line]')
+        end
+        object Memo12: TfrxMemoView
+          Left = 37.795300000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Nama_Siswa'
+          DataSet = frxDBDatasetSemester
+          DataSetName = 'frxDBDatasetSemester'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetSemester."Nama_Siswa"]')
+        end
+        object Memo13: TfrxMemoView
+          Left = 132.283550000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Nama_1'
+          DataSet = frxDBDatasetSemester
+          DataSetName = 'frxDBDatasetSemester'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetSemester."Nama_1"]')
+        end
+        object Memo14: TfrxMemoView
+          Left = 226.771800000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Nama_Poin'
+          DataSet = frxDBDatasetSemester
+          DataSetName = 'frxDBDatasetSemester'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetSemester."Nama_Poin"]')
+        end
+        object Memo15: TfrxMemoView
+          Left = 321.260050000000000000
+          Width = 117.165430000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Nama'
+          DataSet = frxDBDatasetSemester
+          DataSetName = 'frxDBDatasetSemester'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetSemester."Nama"]')
+        end
+        object Memo16: TfrxMemoView
+          Left = 438.425480000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Nama_2'
+          DataSet = frxDBDatasetSemester
+          DataSetName = 'frxDBDatasetSemester'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetSemester."Nama_2"]')
+        end
+        object Memo17: TfrxMemoView
+          Left = 532.913730000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Tanggal'
+          DataSet = frxDBDatasetSemester
+          DataSetName = 'frxDBDatasetSemester'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetSemester."Tanggal"]')
+        end
+        object Memo18: TfrxMemoView
+          Left = 627.401980000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Semester'
+          DataSet = frxDBDatasetSemester
+          DataSetName = 'frxDBDatasetSemester'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetSemester."Semester"]')
+        end
+        object Memo19: TfrxMemoView
+          Left = 721.890230000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Status'
+          DataSet = frxDBDatasetSemester
+          DataSetName = 'frxDBDatasetSemester'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetSemester."Status"]')
+        end
+        object Memo20: TfrxMemoView
+          Left = 816.378480000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'Tingkat_Kelas'
+          DataSet = frxDBDatasetSemester
+          DataSetName = 'frxDBDatasetSemester'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8 = (
+            '[frxDBDatasetSemester."Tingkat_Kelas"]')
+        end
+      end
+    end
+  end
+  object frxDBDatasetHub: TfrxDBDataset
+    UserName = 'frxDBDatasetHub'
+    CloseDataSource = False
+    DataSet = DataModule1.ZCetakHubungan
+    BCDToCurrency = False
+    Left = 240
+    Top = 128
+  end
+  object frxDBDatasetSemester: TfrxDBDataset
+    UserName = 'frxDBDatasetSemester'
+    CloseDataSource = False
+    DataSet = DataModule1.ZCetakSemester
+    BCDToCurrency = False
+    Left = 248
+    Top = 192
   end
 end

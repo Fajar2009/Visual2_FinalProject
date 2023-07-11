@@ -19,6 +19,10 @@ type
     frxDBDatasetPoin: TfrxDBDataset;
     CetakWalikelas: TfrxReport;
     frxDBDatasetWalikelas: TfrxDBDataset;
+    CetakHubungan: TfrxReport;
+    CetakSemester: TfrxReport;
+    frxDBDatasetHub: TfrxDBDataset;
+    frxDBDatasetSemester: TfrxDBDataset;
   private
     { Private declarations }
   public

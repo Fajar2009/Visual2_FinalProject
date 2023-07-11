@@ -21,6 +21,13 @@ type
     DSWalikelas: TDataSource;
     DSKelas: TDataSource;
     DSPoint: TDataSource;
+    ZQSemester: TZQuery;
+    DSHub: TDataSource;
+    DSSemester: TDataSource;
+    ZQHubungan: TZQuery;
+    ZQCari1: TZQuery;
+    ZCetakSemester: TZQuery;
+    ZCetakHubungan: TZQuery;
   private
     { Private declarations }
   public

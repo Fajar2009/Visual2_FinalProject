@@ -128,7 +128,7 @@ begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 DataModule1.ZQWalikelas.SQL.Clear;
-DataModule1.ZQWalikelas.SQL.Add(' delete from ortu where id="'+id+'"');
+DataModule1.ZQWalikelas.SQL.Add(' delete from walikelas where id="'+id+'"');
 DataModule1.ZQWalikelas. ExecSQL;
 
 ShowMessage('DATA BERHASIL DIHAPUS');
